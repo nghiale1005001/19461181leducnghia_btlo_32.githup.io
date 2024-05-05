@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng Dẫn KT</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/vendors/jquery.min.js"></script>
+    <script src="../assets/owlcarousel/owl.carousel.js"></script>
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.css">
+    <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/owlcarousel/assets/owl.theme.default.min.css">
+    <script>
+        $(document).ready(function(){
+            $("#hotenTxt").blur(function(){
+                if(/^[A-Z][a-zA-Z ]*$/.test($("#hotenTxt").val())){
+                    $("#checkHoten").html("Nhập đúng");
+                    $("#checkHoten").css("color", "green");
+                }
+                else{
+                    $("#checkHoten").html("Hãy nhập theo mẫu");
+                    $("#checkHoten").css("color", "red");
+                }
+            })
+            
+            $("#sdtTxt").blur(function(){
+                if(/^0[0-9]{3}-[0-9]{3}-[0-9]{3}$/.test($("#sdtTxt").val())){
+                    $("#checkSDT").html("Nhập đúng");
+                    $("#checkSDT").css("color", "green");
+
+                }
+                else{
+                    $("#checkSDT").html("Nhập theo mẫu");
+                    $("#checkSDT").css("color", "red");
+                }
+            })
+            $("#emailTxt").blur(function(){
+                if(/^[a-z][a-z0-9]*@iuh.edu.vn$/.test($("#emailTxt").val())){
+                    $("#checkEmail").html("Nhập đúng");
+                    $("#checkEmail").css("color", "green");
+
+                }
+                else{
+                    $("#checkEmail").html("Email không hợp lệ.");
+                    $("#checkEmail").css("color", "red");
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <div class=" text-bg-danger ">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <strong>Giải Pháp an toàn cho ngôi nhà của bạn</strong>
+            </div>
+            <div class="col-6 text-bottom">
+            <i class="fa-solid fa-phone"></i> 0906.345.880-0932.782.339  
+              <i class="fa-regular fa-envelope"></i> info@congnghehoangnguyen.com
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="header text-bg-danger border-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="trangchu.html" target="_self"> <img src="../img/anh1.JPG" alt="logo"></a>
+                      </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3 ">
+                        <input type="text" class="form-control" placeholder="Bạn Tìm Gì?" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary bg-black" type="button" id="button-addon2">Tìm Kiếm</button>
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="col-9">
+                                        Hotline <br>
+                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                         <strong class="text-light"> 0332268273</strong>
+                                        </button>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                          <div class="modal-dialog">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+                                                <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><strong>Mở Pick an app?</strong></button>
+                                              </div>
+                                              <div class="modal-body">
+                                                
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn border-primary" data-bs-dismiss="modal">Hủy</button>
+                                                <button type="button" class="btn btn-primary">Mở Pick an app</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-primary position-relative"><i class="fa-solid fa-cart-shopping"></i>
+                                    
+                                <span class="position-absolute  start-70 translate-top p-1 bg-danger border border-light rounded-circle">
+                                    0
+                                  <span class="visually-hidden"></span>
+                                </span>
+                              </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="warpper">
+           <div class="container">
+            <div class="row justify-content-around">
+                <form action="" class="rol-md-6 bg-light py-3 my-3 ">
+                    <h3 class="text-center text-uppercase py-3  my-3">Đăng ký tài khoảng</h3>
+                    <div class="form-group m-3">
+                        <label for="fullname"> Họ và tên</label>
+                        <input type="text" name="fullname" id="fullname" class="form-control" required>
+                    </div>
+                    <div class="form-group m-3">
+                        <label for="username"> Tên Dăng nhâp</label>
+                        <input type="text" name="username" id="username" class="form-control"required>
+                    </div>
+                    <div class="form-group m-3">
+                        <label for="password">mật khẩu</label>
+                        <input type="password" name="password" id="password" class="form-control"required>
+                    </div>
+                    <div class="form-group m-3">
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email" class="form-control"required>
+                    </div>
+                
+                    <div class="form-group m-3">
+                        <label for="checkSDT">số điện thoại</label>
+                        <input type="text" name="checkSDT" id="checkSDT" class="form-control"required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">giới tính</label>
+                        <div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" id="male" value="male" class="form-check-input" checked>
+                            <label for="male" class="form-check-lable">nam</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" id="male" value="male" class="form-check-input">
+                            <label for="male" class="form-check-lable">nữ</label>
+                        </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Đăng ký"
+                    class="btn-primary btn btn-block">
+                </form>
+            </div>
+           </div>
+           </div>
+            </div>
+        <div class="footer  py-4"> 
+            <div class="container border-bottom">
+                <div class="row ">
+                    <div class="col-3"><h4>Thông tin</h4>
+                        Công Nghệ Hoàng Nguyễn
+                        GPKD số 0311650522 do Sở Kế hoạch và Đầu tư TP.HCM cấp ngày 21/03/2012</div>
+                    <div class="col-3"><h4>Hướng Dẫn</h4>
+                        <ul style="line-height: 32px;">
+                            <li><i class="icon-layout" style="color: #0f84e7;"></i> <a href="#" rel="nofollow">Hướng dẫn mua hàng</a></li>
+                            <li><i class="icon-layout" style="color: #0f84e7;"></i> <a href="#" rel="nofollow">Giao hàng và nhận hàng</a></li>
+                            <li><i class="icon-layout" style="color: #0f84e7;"></i> <a href="#" rel="nofollow">Hình thức thanh toán</a></li>
+                            <li><i class="icon-layout" style="color: #0f84e7;"></i> <a href="#" rel="nofollow">Hướng dẫn đổi trả hàng</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-3">Chính sách</div>
+                    <div class="col-3">Liên hệ</div>
+                </div>
+                <hr>
+                <div class="row ">
+                    <div class="col-3">
+                        <h4>Trụ sở chính</h4>
+                        <hr>
+                     <b>   123/63 Phan Văn Hớn, Khu Phố 4, Tân Thới Nhất, Quận 12, TPHCM</b>
+                        Hotline: <strong>0906.345.880</strong><br>
+                        Kinh doanh :<strong> 0932.768.939</strong><br>
+                        Kỹ thuật: <strong>0932.045.339</strong><br>
+                        Bảo hành: <strong>090.3848.229</strong>
+                    </div>
+                    <div class="col-3">
+                        <h4>Đại lý Camera Bình Dương</h4>
+                        <hr>
+                        Công ty TNHH Công Nghệ Kỹ Thuật Gia Nguyễn<br>
+    289 Nguyễn Văn Trỗi, P. Phú Lợi, Thủ Dầu Một, Bình Dương<br>
+    Hotline: <strong>0971 900 062</strong>
+                    </div>
+                    <div class="col-3">
+                        <h4>Đại lý Camera Cần Thơ</h4>
+                        <hr>
+                        CỬA HÀNG CAMERA MT CẦN THƠ<br>
+                        132/26G đường 3/2 – P. Hưng Lợi – Q. Ninh Kiều – TP. Cần Thơ<br>
+                        Hotline: <strong>0931.031.005 – 0834.898.079</strong>
+                    </div>
+                    <div class="col-3">
+                        <h4>Đại Lý Camera Bình Phước</h4>
+                        <hr>
+                        Cát Tường Camera<br>
+                        441 Đường ĐT741, Tổ 5, Ấp 1B, Xã Phước Hòa, Phú Giáo, Bình Dương<br>
+                        <strong>Hotline: 039.408.0646</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footter1">
+           <h6 class="modal-footer">leducnghia 19461181</h6>
+        </div>
+        <script src="../assets/vendors/highlight.js"></script>
+        <script src="../assets/js/app.js"></script>
+</body>
+</html>
